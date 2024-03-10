@@ -2,11 +2,11 @@ import { promisify } from 'util';
 import { createClient } from 'redis';
 
 /**
- * Represents a Redis client.
+ * Shows Redis client.
  */
 class RedisClient {
   /**
-   * Creates a new RedisClient instance.
+   * Develops new RedisClient instance.
    */
   constructor() {
     this.client = createClient();
@@ -21,7 +21,7 @@ class RedisClient {
   }
 
   /**
-   * Checks if this client's connection to the Redis server is active.
+   * Searches if this client's connection to the Redis server is active.
    * @returns {boolean}
    */
   isAlive() {
@@ -29,7 +29,7 @@ class RedisClient {
   }
 
   /**
-   * Retrieves the value of a given key.
+   * Gets back the value of a given key.
    * @param {String} key The key of the item to retrieve.
    * @returns {String | Object}
    */
