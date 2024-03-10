@@ -1,12 +1,12 @@
-import { createClient } from 'redis';
 import { promisify } from 'util';
+import { createClient } from 'redis';
 
 /**
- * Shows Redis client.
+ * Represents a Redis client.
  */
 class RedisClient {
   /**
-   * Develops new RedisClient instance.
+   * Creates a new RedisClient instance.
    */
   constructor() {
     this.client = createClient();
@@ -29,7 +29,7 @@ class RedisClient {
   }
 
   /**
-   * Gets back the value of a given key.
+   * Retrieves the value of a given key.
    * @param {String} key The key of the item to retrieve.
    * @returns {String | Object}
    */
@@ -50,7 +50,7 @@ class RedisClient {
   }
 
   /**
-   * Deletes the value of a given key.
+   * Removes the value of a given key.
    * @param {String} key The key of the item to remove.
    * @returns {Promise<void>}
    */
