@@ -3,7 +3,6 @@ import { promisify } from 'util';
 
 /**
  * Shows Redis client.
- * Graham S. Paul
  */
 class RedisClient {
   /**
