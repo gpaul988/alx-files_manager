@@ -21,7 +21,7 @@ class RedisClient {
   }
 
   /**
-   * Searches if this client's connection to the Redis server is active.
+   * Searches if the client's connection to the Redis server is active.
    * @returns {boolean}
    */
   isAlive() {
@@ -29,8 +29,8 @@ class RedisClient {
   }
 
   /**
-   * Gets back the value of a given key.
-   * @param {String} key The key of the item to retrieve.
+   * Gets bach the value of a given key.
+   * @param {String} key Key of the item to retrieve.
    * @returns {String | Object}
    */
   async get(key) {
@@ -38,7 +38,7 @@ class RedisClient {
   }
 
   /**
-   * Stores a key and its value along with an expiration time.
+   *saves key and its value along with an expiration time.
    * @param {String} key The key of the item to store.
    * @param {String | Number | Boolean} value The item to store.
    * @param {Number} duration The expiration time of the item in seconds.
@@ -50,8 +50,8 @@ class RedisClient {
   }
 
   /**
-   * Removes the value of a given key.
-   * @param {String} key The key of the item to remove.
+   * Deletes value of a given key.
+   * @param {String} key key of the item to remove.
    * @returns {Promise<void>}
    */
   async del(key) {
