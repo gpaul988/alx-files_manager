@@ -1,5 +1,5 @@
-import { promisify } from 'util';
 import { createClient } from 'redis';
+import { promisify } from 'util';
 
 /**
  * Shows Redis client.
@@ -23,6 +23,7 @@ class RedisClient {
   /**
    * Searches if this client's connection to the Redis server is active.
    * @returns {boolean}
+   * @Author Graham S. Paul
    */
   isAlive() {
     return this.isClientConnected;
