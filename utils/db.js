@@ -1,7 +1,7 @@
-import envLoader from './env_loader';
+import mongodb from 'mongodb';
 // eslint-disable-next-line no-unused-vars
 import Collection from 'mongodb/lib/collection';
-import mongodb from 'mongodb';
+import envLoader from './env_loader';
 
 /**
  * Shows MongoDB client.
