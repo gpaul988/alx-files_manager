@@ -1,14 +1,14 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable no-unused-vars */
-import mongoDBCore from 'mongodb/lib/core';
-import dbClient from './db';
 import sha1 from 'sha1';
 import { Request } from 'express';
+import mongoDBCore from 'mongodb/lib/core';
+import dbClient from './db';
 import redisClient from './redis';
 
 /**
  * Gets user from Authorization header in the given request object.
- * @param {Request} req The Express request object.
+ * @param {Request} req Express request object.
  * @returns {Promise<{_id: ObjectId, email: string, password: string}>}
  * @author Graham S. Paul
  */
@@ -36,7 +36,7 @@ export const getUserFromAuthorization = async (req) => {
 };
 
 /**
- * Gets user from X-Token header in the given request object.
+ * Gets  user from  X-Token header in the given request object.
  * @param {Request} req The Express request object.
  * @returns {Promise<{_id: ObjectId, email: string, password: string}>}
  */
