@@ -30,7 +30,7 @@ class DBClient {
   }
 
   /**
-   * Retrieves the number of users in the database.
+   * Gets back number of users in the database.
    * @returns {Promise<Number>}
    */
   async nbUsers() {
