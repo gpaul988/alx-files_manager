@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
-import AppController from '../controllers/AppController';
 import { Express } from 'express';
+import AppController from '../controllers/AppController';
 import AuthController from '../controllers/AuthController';
 import UsersController from '../controllers/UsersController';
 import FilesController from '../controllers/FilesController';
@@ -10,6 +10,7 @@ import { APIError, errorResponse } from '../middlewares/error';
 /**
  * Inputs routes and their handlers to the given Express application.
  * @param {Express} api
+ * @author Graham S. Paul
  */
 const injectRoutes = (api) => {
   api.get('/status', AppController.getStatus);
