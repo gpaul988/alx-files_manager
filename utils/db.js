@@ -22,7 +22,7 @@ class DBClient {
   }
 
   /**
-   * Checks for client's connection to the MongoDB server is active.
+   * searches client's connection to the MongoDB server is active.
    * @returns {boolean}
    */
   isAlive() {
