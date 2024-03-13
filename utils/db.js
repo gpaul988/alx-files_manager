@@ -4,11 +4,11 @@ import Collection from 'mongodb/lib/collection';
 import envLoader from './env_loader';
 
 /**
- * Represents a MongoDB client.
+ * Shows a MongoDB client.
  */
 class DBClient {
   /**
-   * Creates a new DBClient instance.
+   * Generate a new DBClient instance.
    */
   constructor() {
     envLoader();
@@ -22,7 +22,7 @@ class DBClient {
   }
 
   /**
-   * Checks if this client's connection to the MongoDB server is active.
+   * Checks for client's connection to the MongoDB server is active.
    * @returns {boolean}
    */
   isAlive() {
