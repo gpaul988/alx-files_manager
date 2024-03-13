@@ -4,6 +4,9 @@ import injectRoutes from './routes';
 import injectMiddlewares from './libs/middlewares';
 
 const server = express();
+/**
+ * @author Graham S. Paul
+ */
 
 injectMiddlewares(server);
 injectRoutes(server);
