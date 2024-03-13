@@ -24,6 +24,7 @@ class DBClient {
   /**
    * searches client's connection to the MongoDB server is active.
    * @returns {boolean}
+   * @author Graham S. Paul
    */
   isAlive() {
     return this.client.isConnected();
