@@ -2,6 +2,9 @@
 import sha1 from 'sha1';
 import Queue from 'bull/lib/queue';
 import dbClient from '../utils/db';
+/**
+ * @author Graham S. Paul
+ */
 
 const userQueue = new Queue('email sending');
 
